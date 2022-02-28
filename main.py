@@ -6,7 +6,7 @@ dump(
 	{
 		e.text.replace('\n', '').replace('-', ' ').capitalize()
 		:
-		'<i class="bi bi-'+e.text.replace("\n", "")+'"></i>'
+		'<i class="bi bi-'+e.text.replace("\n", "")+'"></i>'.replace('\', '')
 		for e in BeautifulSoup(
 			get(
 				'https://icons.getbootstrap.com'
